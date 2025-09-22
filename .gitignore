@@ -56,3 +56,6 @@ coverage.xml
 
 # Environments
 .env
+
+# tutorial PDF
+*.pdf
