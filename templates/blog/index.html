@@ -1,7 +1,24 @@
 {% extends "base.html" %}
-{% load blog_extras %}
+{% load  blog_extras %}
 {% block content %}
-
+    <h2>Blog Posts</h2>
+    {% for post in posts %}
+        <!--<div class="row">-->
+        {% row "border-bottom" %}
+            <div class="col">
+                <h3>{{ post.title }}</h3>
+                {% include "blog/post-byline.html" %}
+                <p>{{ post.summary }}</p>
+                <p>
+                    ({{ post.content|wordcount }} words)
+                    <a href="{% url "blog-post-detail" post.slug %}">Read More</a>
+                </p>
+            </div>
+        {% endrow %}
+        <!--</div>-->
+    {% endfor %}
+{% endblock %}
+{% comment %}
     <h2>Blog Posts</h2>
     {% for post in posts %}
         <div class="row">
@@ -16,7 +33,19 @@
             </div>
         </div>
     {% endfor %}
-<!--
+
+    <h2>{{ post.title }}</h2>
+    <div class="row">
+        <div class="col">
+            {% include "blog/post-byline.html" %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {{ post.content|safe }}
+        </div>
+    </div>
+
 <div class="row">
     <div class="col bg-primary">Column 1</div>
     <div class="col bg-danger">Column 2</div>
@@ -35,7 +64,6 @@
     <div class="col-sm bg-success">Column 3</div>
     <div class="col bg-black">Column 4  </div>
 </div>
--->
 
 <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-6 bg-primary">Column1</div>
@@ -45,7 +73,6 @@
 
 {% endblock %}
 
-<!--
 <h2>Index Template</h2>
 <div class="alert alert-success" role="alert">
     A simple success alert—check it out!
@@ -139,4 +166,4 @@
     </li>
 </ul>
 
--->
+{% endcomment %}
