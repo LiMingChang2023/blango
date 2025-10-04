@@ -1,0 +1,146 @@
+[
+    {
+        "model": "blog.comment",
+        "pk": 1,
+        "fields": {
+            "creator": 1,
+            "content": "What a great post!",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-09-22T12:55:55.349Z",
+            "modified_at": "2025-09-22T12:55:55.354Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 2,
+        "fields": {
+            "creator": 1,
+            "content": "I like myself!",
+            "content_type": 4,
+            "object_id": 1,
+            "created_at": "2025-09-22T12:55:55.349Z",
+            "modified_at": "2025-09-22T12:55:55.354Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 3,
+        "fields": {
+            "creator": 1,
+            "content": "This is the testing comment from frontend",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-10-01T09:20:49.617Z",
+            "modified_at": "2025-10-01T09:20:49.617Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 4,
+        "fields": {
+            "creator": 1,
+            "content": "this is test comment for logger test.",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-10-02T09:35:40.315Z",
+            "modified_at": "2025-10-02T09:35:40.315Z"
+        }
+    },
+    {
+        "model": "blog.comment",
+        "pk": 5,
+        "fields": {
+            "creator": 1,
+            "content": "other test.",
+            "content_type": 8,
+            "object_id": 1,
+            "created_at": "2025-10-02T09:41:20.132Z",
+            "modified_at": "2025-10-02T09:41:20.132Z"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 1,
+        "fields": {
+            "value": "example"
+        }
+    },
+    {
+        "model": "blog.tag",
+        "pk": 2,
+        "fields": {
+            "value": "django"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 1,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-09-22T09:48:44.834Z",
+            "modified_at": "2025-09-25T09:08:17.991Z",
+            "published_at": "2025-09-25T09:08:16Z",
+            "title": "Example Post",
+            "slug": "example-post",
+            "summary": "example post",
+            "content": "<h1>Hello</h1>\r\n<p>this is the example post</p>",
+            "tags": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 2,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-09-27T10:43:28.493Z",
+            "modified_at": "2025-09-27T10:43:28.493Z",
+            "published_at": "2025-09-25T10:40:40Z",
+            "title": "The second One",
+            "slug": "the-second-one",
+            "summary": "No.2 Testing post",
+            "content": "This is the second post that used to test the frontend rendering, \r\n\r\nso I need to saying something useless to make the paragraph being more.\r\n\r\nDon't make any commnet on the content, it's just for increasing the word count.",
+            "tags": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 3,
+        "fields": {
+            "author": 1,
+            "created_at": "2025-09-30T10:18:02.304Z",
+            "modified_at": "2025-09-30T10:18:02.304Z",
+            "published_at": "2025-09-30T10:16:28Z",
+            "title": "For list",
+            "slug": "for-list",
+            "summary": "This is for list test",
+            "content": "Now, I am going to type something useless. Because I have to test the list of post function.",
+            "tags": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "blango_auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "argon2$argon2id$v=19$m=102400,t=2,p=8$SmdaNnVERlBZa0szMmpQWHh3clZrRQ$cd/oervnSK4cXmeGfNffshb+3uzAupq59NEea7WzbWg",
+            "last_login": "2025-10-02T10:19:49.625Z",
+            "is_superuser": true,
+            "username": "lmc",
+            "first_name": "",
+            "last_name": "",
+            "email": "i0ismileforever@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-09-22T08:46:10Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
