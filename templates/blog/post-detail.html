@@ -16,13 +16,15 @@
     {% include "blog/post-comments.html" %}
     {% row %}
         {% col %}
-        <!--
+        {% comment %}
             {% cache 3600 recent_posts %}
                 {% recent_posts post %}
             {% endcache %}
-        -->
+        {% endcomment %}
         <!-- more specific to each post -->
-            {% cache 3600 recent_posts post %}
+            {% cache 3600 recent_posts post.id %}
+                {% recent_posts post %}
+            {% endcache %}
 
         {% endcol %}
     {% endrow %}

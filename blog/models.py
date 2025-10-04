@@ -27,7 +27,8 @@ class Post(models.Model):
     on_delete=models.PROTECT)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
-    published_at = models.DateTimeField(blank=True, null=True)
+    published_at = models.DateTimeField(blank=True, null=True, db_index=True)
+
     title = models.TextField(max_length=100)
     slug = models.SlugField()
     summary = models.TextField(max_length=500)
