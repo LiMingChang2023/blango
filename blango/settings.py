@@ -30,7 +30,7 @@ class Dev(Configuration):
 
     ALLOWED_HOSTS = ['*']
 
-    AUTH_USER_MODEL = 'blango_auth.User'
+    AUTH_USER_MODEL = "blango_auth.User"
     # Application definition
 
     INSTALLED_APPS = [
@@ -214,3 +214,6 @@ class Dev(Configuration):
         "127.0.0.1",
         "localhost",
 ]
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    ACCOUNT_ACTIVATION_DAYS = 7 ,
+    REGISTRATION_OPEN = False

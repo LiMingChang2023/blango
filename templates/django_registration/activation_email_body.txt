@@ -1,0 +1,9 @@
+Hi {{ user.email }},
+
+You registered for Blango, but you need to activate your account within {{ expiration_days }} days.
+To activate your account, please click the link below:
+
+{{ activation_url }}
+
+Thanks,
+The Blango Team
